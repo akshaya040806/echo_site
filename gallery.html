@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Choose the Lead</title>
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f0f0f0;
+      text-align: center;
+      padding: 50px;
+    }
+    h2 {
+      margin-bottom: 30px;
+    }
+    .gallery {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .gallery img {
+      width: 200px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- CYS{lyr@_k3p7_@_reD_h3rr1ng} -->
+
+  <h2>One of these holds the lead. Choose wisely.</h2>
+  <div class="gallery">
+    <img src="https://en.wikipedia.org/wiki/Joule%E2%80%93Thomson_effect" alt="Image 1" onclick="checkLead(1)">
+    <img src="https://thewowstyle.com/wp-content/uploads/2015/01/nature-images..jpg" alt="Image 2" onclick="checkLead(2)">
+    <img src="hehe.png" alt="Image 3" onclick="checkLead(3)">
+    <img src="https://tse1.mm.bing.net/th/id/OIP.aoNcaN2Dk0XdHgRTB1xkhgHaFj?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Image 4" onclick="checkLead(4)">
+  </div>
+
+  <p id="result" style="margin-top: 30px; font-size: 18px;"></p>
+
+  <script>
+    const leadImage = 3;
+
+    function checkLead(choice) {
+      const result = document.getElementById("result");
+      if (choice === leadImage) {
+        result.innerText = "CYS{h3h3_7@k3_7#e_1m@g3}";
+      } else {
+        result.innerText = "Try again.";
+      }
+    }
+  </script>
+
+</body>
+</html>
+
